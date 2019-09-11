@@ -119,6 +119,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1395498763}
     m_Modifications:
+    - target: {fileID: 1892051963513670, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
+      propertyPath: m_Name
+      value: Car
+      objectReference: {fileID: 0}
     - target: {fileID: 4006619047661064, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.89
@@ -149,6 +153,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4006619047661064, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006619047661064, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006619047661064, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006619047661064, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 65364870208569476, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
@@ -562,7 +578,7 @@ Light:
   m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 536871735
+    m_Bits: 536872759
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
@@ -1359,6 +1375,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1395498763}
     m_Modifications:
+    - target: {fileID: 1318086987785562, guid: 17f24fb050ff4d74f8b219fad41590be, type: 3}
+      propertyPath: m_Name
+      value: ForkLoader
+      objectReference: {fileID: 0}
     - target: {fileID: 4403062677179240, guid: 17f24fb050ff4d74f8b219fad41590be, type: 3}
       propertyPath: m_LocalPosition.x
       value: -29.27
@@ -1390,6 +1410,18 @@ PrefabInstance:
     - target: {fileID: 4403062677179240, guid: 17f24fb050ff4d74f8b219fad41590be, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403062677179240, guid: 17f24fb050ff4d74f8b219fad41590be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403062677179240, guid: 17f24fb050ff4d74f8b219fad41590be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403062677179240, guid: 17f24fb050ff4d74f8b219fad41590be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17f24fb050ff4d74f8b219fad41590be, type: 3}
@@ -1552,6 +1584,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1395498763}
     m_Modifications:
+    - target: {fileID: 1049296754892464, guid: b65e5ba6684a36e4fad2e97772d523a8, type: 3}
+      propertyPath: m_Name
+      value: ScoutCar
+      objectReference: {fileID: 0}
     - target: {fileID: 4144516960002934, guid: b65e5ba6684a36e4fad2e97772d523a8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.36
@@ -1583,6 +1619,18 @@ PrefabInstance:
     - target: {fileID: 4144516960002934, guid: b65e5ba6684a36e4fad2e97772d523a8, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4144516960002934, guid: b65e5ba6684a36e4fad2e97772d523a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4144516960002934, guid: b65e5ba6684a36e4fad2e97772d523a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4144516960002934, guid: b65e5ba6684a36e4fad2e97772d523a8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b65e5ba6684a36e4fad2e97772d523a8, type: 3}
@@ -1832,7 +1880,7 @@ PrefabInstance:
     - target: {fileID: 5777661438032701834, guid: fe9ca22dd7a5f2c4b88a4fbfc68aa3af,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.47
+      value: -6.03
       objectReference: {fileID: 0}
     - target: {fileID: 5777661438032701834, guid: fe9ca22dd7a5f2c4b88a4fbfc68aa3af,
         type: 3}
