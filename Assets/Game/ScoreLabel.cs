@@ -6,27 +6,27 @@ public class ScoreLabel : MonoBehaviour
     public UnityEngine.UI.Text textScore;
     public UnityEngine.UI.Text textRate;
 
-    public static uint killCount = 0;
-    private int lastZombies = 0;
+    public static uint coinsCount = 0;
+    private int lastCoin = 0;
     private int bestRate = 0;
-    private Queue<System.DateTime> zombies = new Queue<System.DateTime>();
+    private Queue<System.DateTime> coins = new Queue<System.DateTime>();
 
-    void CountZombies()
+    void CountCoins()
     {
-        // remove stalled zombies
+        // remove stalled coins
         {
             var thr = System.DateTime.Now + System.TimeSpan.FromSeconds(-120);
-            while (zombies.Count > 0 && zombies.Peek() < thr)
-                zombies.Dequeue();
+            while (coins.Count > 0 && coins.Peek() < thr)
+                coins.Dequeue();
         }
 
-        // add new zombies
+        // add new coins
         {
             var t = System.DateTime.Now;
-            while (lastZombies < killCount)
+            while (lastCoin < coinsCount)
             {
-                lastZombies++;
-                zombies.Enqueue(t);
+                lastCoin++;
+                coins.Enqueue(t);
             }
         }
     }
@@ -37,21 +37,21 @@ public class ScoreLabel : MonoBehaviour
             return;
         if (Input.GetAxis("Restart") > 0)
         {
-            killCount = 0;
-            lastZombies = 0;
+            coinsCount = 0;
+            lastCoin = 0;
             bestRate = 0;
-            zombies.Clear();
+            coins.Clear();
             return;
         }
-        CountZombies();
-        textScore.text = killCount.ToString();
+        CountCoins();
+        textScore.text = coinsCount.ToString();
             textRate.text = "- (" + bestRate.ToString() + ")";
-        if (zombies.Count >= 1)
+        if (coins.Count >= 1)
         {
-            float duration = (float)(System.DateTime.Now - zombies.Peek()).TotalSeconds;
+            float duration = (float)(System.DateTime.Now - coins.Peek()).TotalSeconds;
             if (duration > 30)
             {
-                int rate = Mathf.RoundToInt(60f * zombies.Count / duration);
+                int rate = Mathf.RoundToInt(60f * coins.Count / duration);
                 if (rate > bestRate)
                     bestRate = rate;
                 textRate.text = rate.ToString() + " (" + bestRate.ToString() + ")";
